@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Digital Safety Concerns</h2>
+    <ul>
+        {% for concern in concerns %}
+            <li>{{ concern }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

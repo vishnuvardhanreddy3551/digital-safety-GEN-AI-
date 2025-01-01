@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Digital Safety Rules</h2>
+    <ul>
+        {% for rule in rules %}
+            <li>{{ rule }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

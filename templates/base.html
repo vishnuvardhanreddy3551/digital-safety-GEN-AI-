@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Safety</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body{
+            background-image: url(https://thumbs.dreamstime.com/z/digital-padlock-abstract-technology-background-modern-safety-personal-data-concept-security-protection-system-cyber-251797375.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Safety</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('show_concerns') }}">Concerns</a></li>
+                <li><a href="{{ url_for('show_tips') }}">Tips</a></li>
+                <li><a href="{{ url_for('show_guide') }}">Guide</a></li>
+                <li><a href="{{ url_for('show_rules') }}">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2024 Digital Safety</p>
+    </footer>
+</body>
+</html>
